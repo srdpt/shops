@@ -1,0 +1,43 @@
+/* CSS styles for application layout, imported in App.js to be used across application */
+html, body, .content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;    
+}
+/* Website uses the local font Gilroy, files in static folder  */
+@font-face{
+    font-family: 'Gilroy';
+    src: local('Gilroy'), url(../static/fonts/Gilroy-FREE/Gilroy-Light.otf) format('otf');
+}
+h1{
+    font-size: 3vh;
+    font-weight: 700;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.site-header{
+    flex: 0 1 auto;
+    height: fit-content;
+    background-color: black;    
+    display: flex;
+    justify-content: center;
+}
+#menu{
+    width: 2.5vw;
+    height: auto;
+}
+#site-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .15vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.site-body{
+    flex: 1 1 auto;
+}
